@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:context=".CourseDetailActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course ID:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewDetailCourseId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="101" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewDetailCourseCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="CS101" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewDetailCourseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="18sp"
+            tools:text="Introduction to Computer Science" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewDetailCourseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="A very interesting course about the fundamentals of CS, covering topics A, B, and C." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewDetailCourseYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            tools:text="2024" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assigned Teacher:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewDetailCourseTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            tools:text="Prof. Albus Dumbledore" />
+
+        <Button
+            android:id="@+id/buttonManageTeacherAssociation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Assign Teacher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enrolled Students:"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewDetailCourseStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Student 1, Student 2, Student 3 (or 'No students enrolled')" />
+
+    </LinearLayout>
+</ScrollView>
